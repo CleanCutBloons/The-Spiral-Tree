@@ -1,8 +1,8 @@
 let modInfo = {
-	name: "The ??? Tree",
-	id: "mymod",
-	author: "nobody",
-	pointsName: "points",
+	name: "The Spiral Tree",
+	id: "spiraltree",
+	author: "CleanCutBloons",
+	pointsName: "energy",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
@@ -13,14 +13,13 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0",
-	name: "Literally nothing",
+	num: "0.0.1",
+	name: "Entry 001",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+	<h3>v0.0.1</h3><br>
+		- Added the inner layer.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -47,8 +46,9 @@ function getPointGen() {
 }
 
 // You can add non-layer related variables that should to into "player" and be saved here, along with default values
-function addedPlayerData() { return {
-}}
+function addedPlayerData() { 
+	return {}
+}
 
 // Display extra things at the top of the page
 var displayThings = [
@@ -56,7 +56,7 @@ var displayThings = [
 
 // Determines when the game "ends"
 function isEndgame() {
-	return player.points.gte(new Decimal("e280000000"))
+	return player.points.gte(new Decimal("11"))
 }
 
 
