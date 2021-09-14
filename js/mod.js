@@ -9,6 +9,7 @@ let modInfo = {
 	discordLink: "",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
+	played: false,
 }
 
 // Set your version in num and name
@@ -28,7 +29,10 @@ let winText = `Congratulations! You have reached the end and beaten this game, b
 var doNotCallTheseFunctionsEveryTick = ["blowUpEverything"]
 
 function getStartPoints(){
-    return new Decimal(modInfo.initialStartPoints)
+    let startPoints = 0
+    if(!modInfo.played) startPoints = new Decimal(modInfo.initialStartPoints)
+    played = true
+    return startPoints
 }
 
 // Determines if it should show points/sec
@@ -71,7 +75,7 @@ var backgroundStyle = {
 
 // You can change this if you have things that can be messed up by long tick lengths
 function maxTickLength() {
-	return(3600) // Default is 1 hour which is just arbitrarily large
+	return(60) // Default is 1 hour which is just arbitrarily large
 }
 
 // Use this if you need to undo inflation from an older version. If the version is older than the version that fixed the issue,
