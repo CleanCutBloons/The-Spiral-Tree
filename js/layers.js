@@ -40,7 +40,7 @@ addLayer("p", {
 		description: "Reorganize the factory to improve power generation..",
 		cost: new Decimal(100),
 		effect() {
-			return player.points.add(1)
+			return player.points.add(1).ln().add(1)
 		},
 		effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" },
 	}
