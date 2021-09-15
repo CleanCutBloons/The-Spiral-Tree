@@ -30,8 +30,6 @@ var doNotCallTheseFunctionsEveryTick = ["blowUpEverything"]
 
 function getStartPoints(){
     let startPoints = new Decimal(0)
-    if(!modInfo.played) startPoints = new Decimal(modInfo.initialStartPoints)
-    modInfo.played = true
     return startPoints
 }
 
