@@ -35,5 +35,14 @@ addLayer("p", {
 		},
 		effectDisplay() { return format(upgradeEffect(this.layer, this.id))+" points/sec" },
 	},
+	12: {
+		title: "Improving Efficiency",
+		description: "Reorganize the factory to improve power generation..",
+		cost: new Decimal(100),
+		effect() {
+			return player.points.ln().add(1)
+		},
+		effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" },
+	}
     }
 })
