@@ -29,7 +29,7 @@ let winText = `Congratulations! You have reached the end and beaten this game, b
 var doNotCallTheseFunctionsEveryTick = ["blowUpEverything"]
 
 function getStartPoints(){
-    let startPoints = 0
+    let startPoints = new Decimal(0)
     if(!modInfo.played) startPoints = new Decimal(modInfo.initialStartPoints)
     modInfo.played = true
     return startPoints
