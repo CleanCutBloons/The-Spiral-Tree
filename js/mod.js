@@ -14,13 +14,16 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0.1",
-	name: "Entry 001",
+	num: "0.0.2",
+	name: "Sources of Power",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0.1</h3><br>
-		- Added the inner layer.`
+	<h3>v0.0.2</h3><br>
+		- Added the first ring of layers.<br>
+		- No reason to buy them yet, but they're there!<br>
+        <h3>v0.0.1</h3><br>
+		- Added the inner layer.`<br>
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
