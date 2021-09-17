@@ -230,7 +230,7 @@ addLayer("2F", {
         return new Decimal(1)
     },
     row: 1, // Row the layer is in on the tree (0 is the first row)
-    displayRow: 0,
+    displayRow: 1,
     hotkeys: [
         {key: "b", description: "B: Reset for Biofuel", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
