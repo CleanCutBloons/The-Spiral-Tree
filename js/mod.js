@@ -23,7 +23,7 @@ let changelog = `<h1>Changelog:</h1><br>
 		- Added the first ring of layers.<br>
 		- No reason to buy them yet, but they're there!<br>
         <h3>v0.0.1</h3><br>
-		- Added the inner layer.`<br>
+		- Added the inner layer.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
