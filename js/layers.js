@@ -20,7 +20,8 @@ addLayer("p", {
     gainExp() { // Calculate the exponent on main currency from bonuses
         return new Decimal(1)
     },
-    row: 1, // Row the layer is in on the tree (0 is the first row)
+    row: 0, // Row the layer is in on the tree (0 is the first row)
+    displayRow: 1,
     hotkeys: [
         {key: "c", description: "C: Reset for Core Power", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
